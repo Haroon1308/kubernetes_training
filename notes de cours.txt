@@ -1,0 +1,7 @@
+Pour exposer notre pod => kubectl port-forward simple-webapp-color 8080:8080 --address 0.0.0.0
+Créer un pod: kubectl apply -f "nom du pod"
+Pour voir les details du pod: kubectl describe pod "nom du pod"
+Pour ajouter un ou des replicas de plus: kubectl scale --replicas=2 deployment/nginx-deploy
+Lister les objets de type deployments avec lleur nombre de replicas: kubectl get deployments.apps
+Mettre à jour la version de l'image: kubectl set image deployment/nginx-deploy nginx=nginx
+Pour afficher le nombre de replicas de chaque objet créé: kubectl get replicasets.apps
